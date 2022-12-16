@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   server.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: samartin <samartin@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/12/15 15:52:03 by samartin          #+#    #+#             */
+/*   Updated: 2022/12/15 15:52:08 by samartin         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <signal.h>
 #include "libft/libft.h"
 
@@ -17,7 +29,7 @@ static void	compose_char(int sig)
 	}
 }
 
-int main (void)
+int	main(void)
 {
 	pid_t	selfid;
 

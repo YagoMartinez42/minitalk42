@@ -6,7 +6,7 @@
 /*   By: samartin <samartin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 15:44:40 by samartin          #+#    #+#             */
-/*   Updated: 2022/12/02 15:39:24 by samartin         ###   ########.fr       */
+/*   Updated: 2022/12/15 13:34:26 by samartin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,6 @@ static unsigned int	process_data(const char ftype, va_list f_args)
 		chrs_wrtn = pf_puthex(va_arg(f_args, unsigned int), "0123456789abcdef");
 	else if (ftype == 'X')
 		chrs_wrtn = pf_puthex(va_arg(f_args, unsigned int), "0123456789ABCDEF");
-	else if (ftype == 'f')
-		chrs_wrtn = pf_putfloat(va_arg(f_args, double));
 	else
 		chrs_wrtn = pf_putchar((int)ftype);
 	return (chrs_wrtn);
