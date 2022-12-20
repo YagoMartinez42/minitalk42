@@ -3,3 +3,4 @@ libft.a
 libftprintf.a
 client
 server
+.DS_Store
