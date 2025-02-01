@@ -18,7 +18,7 @@ static void	compose_char(int sig, siginfo_t *info, void *context)
 	static int	bytelen = 0;
 	static int	char2print = 0;
 
-	context = NULL;
+	context = (char *)context;
 	if (sig == SIGUSR1)
 		char2print |= (1 << bytelen);
 	bytelen++;

@@ -36,7 +36,7 @@ clean:
 	cd ${LFTDIR} &&	make clean
 
 fclean: clean
-	${RM} ${NAME} ${CLIENT}
+	${RM} ${NAME} ${CLIENT} ${SVBN} ${CLBN}
 	${RM} ${LIBFT}
 	cd ${LFTDIR} && make fclean
 

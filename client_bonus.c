@@ -49,7 +49,7 @@ int	main(int argc, char **argv)
 		return (-1);
 	}
 	serv_pid = ft_atoi(argv[1]);
-	if (serv_pid < 100 || serv_pid > 99998)
+	if (serv_pid < 100 || serv_pid > 99999998)
 	{
 		write (1, "PID out of valid range\n", 23);
 		return (-1);
